@@ -53,12 +53,6 @@
   gap: var(--size-mini);
 }
 
-.license {
-  max-width: 216px;
-  @include font-caption;
-  color: var(--gray-color);
-}
-
 .bottomBlock {
   gap: var(--size-big);
 
