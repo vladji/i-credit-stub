@@ -1,0 +1,35 @@
+@import '../../styles/mixins.scss';
+
+.section {
+  flex: 1;
+  padding-block: var(--size-huge);
+  background-image: url("../../../public/images/background.jpg");
+  background-position: center;
+  background-size: cover;
+
+  @media(min-width: #{$breakpoint-desktop}) {
+    padding-block: 134px;
+  }
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: right;
+}
+
+.containerInner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-standard);
+}
+
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-standard);
+}
+
+.cardLink {
+  @include font-h3;
+}

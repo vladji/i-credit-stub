@@ -1,0 +1,19 @@
+@import '../../../styles/mixins';
+
+.mainButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 56px;
+  padding-inline: var(--size-huge);
+  border-radius: var(--size-medium);
+  background-color: var(--brand-color);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--light-color);
+
+  @media(min-width: #{$breakpoint-desktop}) {
+    font-size: 18px;
+  }
+}

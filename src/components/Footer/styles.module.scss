@@ -1,0 +1,103 @@
+@import '../../styles/mixins.scss';
+
+.footer {
+  padding-block: var(--size-standard);
+
+  @media(min-width: #{$breakpoint-desktop}) {
+    padding-block: var(--size-big);
+  }
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--size-big);
+
+  @media(min-width: #{$breakpoint-desktop}) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+}
+
+.topBlock {
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  gap: var(--size-standard);
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-medium);
+  margin-bottom: var(--size-big);
+  @include font-body-small;
+
+  @media(min-width: #{$breakpoint-desktop}) {
+    margin-bottom: var(--size-standard);
+    @include font-body;
+  }
+}
+
+.cardsContainer {
+  display: flex;
+  gap: var(--size-mini);
+}
+
+.license {
+  max-width: 216px;
+  @include font-caption;
+  color: var(--gray-color);
+}
+
+.bottomBlock {
+  gap: var(--size-big);
+
+  @media(min-width: #{$breakpoint-desktop}) {
+    gap: var(--size-standard);
+    width: 270px;
+  }
+}
+
+.info {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-mini);
+
+  @media(min-width: #{$breakpoint-desktop}) {
+    order: 1;
+  }
+
+  .text {
+    @include font-caption;
+    color: var(--gray-color);
+  }
+}
+
+.footerButton {
+  order: 1;
+  height: 36px;
+  font-size: 14px;
+
+  @media(min-width: #{$breakpoint-desktop}) {
+    order: 2
+  }
+}
+
+.documentsCard {
+  height: 50%;
+
+  @media(min-width: #{$breakpoint-desktop}) {
+    height: 300px;
+  }
+}

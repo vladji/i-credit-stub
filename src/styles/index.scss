@@ -1,0 +1,68 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--light-color);
+  font-family: Arial, sans-serif;
+  @include font-body;
+  color: var(--black-color);
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+h1,
+h2 {
+  @include font-h1;
+}
+
+h3 {
+  @include font-h3;
+}
+
+button {
+  @media(min-width: #{$breakpoint-desktop}) {
+    cursor: pointer;
+  }
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  padding-inline: var(--size-standard);
+}
+
+.container {
+  max-width: var(--content-width);
+  margin-inline: auto;
+}
+
+.desktopDisplay {
+  display: none;
+
+  @media(min-width: #{$breakpoint-desktop}) {
+    display: flex;
+  }
+}
+
+.mobileDisplay {
+  display: flex;
+
+  @media(min-width: #{$breakpoint-desktop}) {
+    display: none;
+  }
+}

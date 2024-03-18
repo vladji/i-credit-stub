@@ -1,0 +1,55 @@
+@import 'constants';
+
+:root {
+  // layout
+  --content-width: 1152px;
+  --form-content: 368px;
+  --form-content-wide: 564px;
+
+  // components
+  --header-height: #{$header-height-mobile};
+  --button-height: 56px;
+  --mobile-menu-width: 200px;
+  --section-padding-block: #{$section-padding-block-mobile};
+
+  // fonts
+  --font-standard-size: 16px;
+  --font-small-size: 14px;
+
+  // sizes
+  --size-huge-double: 64px;
+  --size-mega: 56px;
+  --size-grand: 48px;
+  --size-huge: 32px;
+  --size-big: 24px;
+  --size-standard: 16px;
+  --size-medium: 12px;
+  --size-mini: 8px;
+  --size-micro: 4px;
+
+  // colors
+  --brand-color: #0094ff;
+  --brand-light-color: #e6f1fe;
+  --extra-light-blue: #f1f9ff;
+  --light-color: #fff;
+  --light-mute-color: #f1f1f1;
+  --black-color: #000;
+  --gray-color: #929292;
+  --gray-light-color: #F0F0F0;
+  --light-gray: #d7dbdd;
+  --green-color: #16a34a;
+  --alert-color: #ff0000;
+  --warning-color: #ff9900;
+
+  --component-shadow: 0 0 20px 0 rgba(102, 86, 86, 0.15);
+}
+
+@media (min-width: #{$breakpoint-desktop}) {
+  :root {
+    // layout
+    --header-height: #{$header-height-desktop};
+
+    // components
+    --section-padding-block: #{$section-padding-block-desktop};
+  }
+}

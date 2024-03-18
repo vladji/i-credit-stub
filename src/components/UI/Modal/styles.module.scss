@@ -1,0 +1,23 @@
+@import '../../../styles/mixins.scss';
+
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--size-standard);
+  background-color: rgba(146, 146, 146, 0.14);
+  font-family: Arial, sans-serif;
+  @include font-body;
+  color: var(--black-color);
+}
+
+.closeButton {
+  position: absolute;
+  top: var(--size-standard);
+  right: var(--size-standard);
+}
