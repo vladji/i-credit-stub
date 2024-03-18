@@ -14,7 +14,6 @@ export const Stub = () => {
               доступе к функциям сайта.
               Благодарим за ваше понимание и терпение.
             </p>
-            <a className={styles.cardLink} href="tel:+77089128007">+7 708 912 80 07</a>
           </CardBlank>
           <MakePayment />
         </div>
