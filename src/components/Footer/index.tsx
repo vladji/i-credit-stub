@@ -19,6 +19,7 @@ export const Footer = () => {
         <div className={`${styles.block} ${styles.topBlock}`}>
           <div>
             <div className={styles.contacts}>
+              <p>По всем интересующим вопросам просим обращаться по электронному адресу:</p>
               <div className={`${styles.row}`}>
                 <EmailIcon />
                 <a href="mailto:info@i-credit.kz">info@i-credit.kz</a>
